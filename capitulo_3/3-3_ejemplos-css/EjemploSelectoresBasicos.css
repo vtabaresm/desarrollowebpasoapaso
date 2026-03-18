@@ -1,0 +1,22 @@
+/*Ejemplo de Selectores Básicos*/
+/*Selector Universal*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Selector de etiqueta*/
+p {
+  line-height: 1.5;
+}
+
+/*Selector de clase*/
+.destacado {
+  color: darkblue;
+  font-weight: bold;
+}
+
+/*Selector de id*/
+#principal {
+  background-color: #eef;
+}

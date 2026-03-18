@@ -1,0 +1,31 @@
+/*Ejemplo de Selectores Combinadores*/
+/* Regla 1: Descendiente */
+.contenedor p {
+  color: blue;
+}
+
+/* Regla 2: Hijo directo */
+.contenedor > p {
+  font-weight: bold;
+}
+
+/* Regla 3: Hermano adyacente */
+h2 + p {
+  background-color: #f0f0f0;
+}
+
+/* Regla 4: Hermano general */
+h2 ~ p {
+  border-left: 3px solid green;
+}
+
+
+
+
+/*Ejemplo de media query*/
+@media (max-width: 768px) {
+  body {
+    background-color: lightgray;
+  }
+}
+

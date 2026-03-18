@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos esenciales -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejemplo práctico de documento HTML .">
+  <meta name="author" content="Valentina Tabares">
+  <title>Ejemplo completo de HTML</title>
+
+  <!-- Ejemplo de ícono -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Encabezado de la página -->
+  <header>
+    <h1>Bienvenidos al Curso de Desarrollo Web</h1>
+    <p>Aprendiendo HTML desde cero</p>
+
+    <!-- Barra de navegación -->
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#formulario">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección introductoria -->
+    <section>
+      <h2>Introducción</h2>
+      <p>
+        Este documento demuestra el uso de las etiquetas más comunes en HTML, 
+        incluyendo estructura, contenido, multimedia y formularios. 
+        La correcta organización semántica facilita la accesibilidad, el mantenimiento 
+        y la optimización en buscadores.
+      </p>
+    </section>
+
+    <!-- Elementos multimedia -->
+    <section>
+      <h2>Contenido Multimedia</h2>
+      <p>HTML5 permite integrar fácilmente imágenes, audio y video.</p>
+
+      <!-- Imagen -->
+      <figure>
+        <img src="imagen-ejemplo.jpg" alt="Imagen ilustrativa de un código HTML">
+        <figcaption>Figura 1. Ejemplo de imagen insertada en HTML.</figcaption>
+      </figure>
+
+      <!-- Video -->
+      <video controls>
+        <source src="video-ejemplo.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section>
+      <h2>Formulario de Contacto</h2>
+      <p>Utiliza el siguiente formulario para enviarnos un mensaje:</p>
+
+      <form action="" method="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Curso de Programación con Tecnologías Web.</p>
+    <p><small>Desarrollado con fines educativos.</small></p>
+  </footer>
+</body>
+</html>

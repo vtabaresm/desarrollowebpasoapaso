@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos esenciales -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejemplo práctico de documento HTML .">
+  <meta name="author" content="Valentina Tabares">
+  <title>Ejemplo completo de HTML y CSS (Bootstrap)</title>
+
+  <!-- Ejemplo de ícono -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <!-- Encabezado de la página -->
+  <header class="bg-primary text-white py-4 text-center">
+    <h1 class="fw-bold">Bienvenidos al Curso de Desarrollo Web</h1>
+    <p class="mb-0">Aprendiendo HTML desde cero</p>
+  </header>
+
+    <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Curso Web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#multimedia">Multimedia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#formulario">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container my-5">
+    <!-- Sección introductoria -->
+    <section class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h2 class="card-title text-primary">Introducción</h2>
+        <p class="card-text">
+          Este documento demuestra el uso de las etiquetas más comunes en HTML, 
+          incluyendo estructura, contenido, multimedia y formularios. 
+          La correcta organización semántica facilita la accesibilidad, el mantenimiento 
+          y la optimización en buscadores.
+        </p>
+      </div>
+    </section>
+
+    <!-- Elementos multimedia -->
+    <section class="card shadow-sm mb-4">
+      <div class="card-body text-center">
+        <h2 class="card-title text-primary">Contenido Multimedia</h2>
+        <p>HTML5 permite integrar fácilmente imágenes, audio y video.</p>
+        <!-- Imagen -->
+        <img src="imagen-ejemplo.jpg"
+             class="img-fluid rounded mb-3"
+             alt="Imagen ilustrativa de un código HTML">
+        <figcaption>Figura 1. Ejemplo de imagen insertada en HTML.</figcaption>
+
+        <!-- Video -->
+        <video class="w-75 rounded" controls>
+          <source src="video-ejemplo.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="card shadow-sm mb-4" id="formulario">
+      <div class="card-body">
+        <h2 class="card-title text-primary">Formulario de Contacto</h2>
+        <p>Utiliza el siguiente formulario para enviarnos un mensaje:</p>
+
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Curso de Programación con Tecnologías Web.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

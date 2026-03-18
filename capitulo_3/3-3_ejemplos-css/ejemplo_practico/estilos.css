@@ -1,0 +1,152 @@
+/* ---- Configuración global y tipografía ---- */
+body { /* Selector etiqueta */
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+h2 { /* Selector etiqueta */
+  color: #1e3a8a;
+}
+p { /* Selector etiqueta */
+  margin-bottom: 10px;
+}
+/* -------------------------------- */
+
+/* ---- Estructura general ---- */
+header { /* Selector etiqueta */
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+main { /* Selector etiqueta */
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+section { /* Selector etiqueta */
+  margin-bottom: 25px;
+}
+footer { /* Selector etiqueta */
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+/* -------------------------------- */
+
+/* ---- Tarjeta reutilizable ---- */
+.tarjeta { /* Selector de clase */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+/* -------------------------------- */
+
+/* ---- Menú de navegación ---- */
+.menu { /* Selector etiqueta */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.menu li { /* Selector combinador (descendiente) */
+  background-color: white;
+  border-radius: 20px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.menu li a { /* Selector combinador (descendiente) */
+  display: block;
+  padding: 8px 18px;
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+.menu li:hover { /* Selector combinador (descendiente) con pseudoclase */
+  background-color: #dbeafe;
+  transform: translateY(-2px);
+}
+/* -------------------------------- */
+
+/* ---- Multimedia ---- */
+figure { /* Selector etiqueta */
+  text-align: center;
+  margin: 20px 0;
+}
+img { /* Selector etiqueta */
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+video { /* Selector etiqueta */
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+/* -------------------------------- */
+
+/* ---- Formulario ---- */
+form { /* Selector etiqueta */
+  margin-top: 15px;
+}
+input,
+textarea { /* Selector etiqueta (agrupado) */
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input:focus,
+textarea:focus { /* Selector etiqueta con pseudoclase (agrupado) */
+  outline: none;
+  border-color: #1e3a8a;
+}
+button { /* Selector etiqueta */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e3a8a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover { /* Selector etiqueta con pseudoclase */
+  background-color: #162d66;
+}
+/* -------------------------------- */
+
+/* ---- Estilos específicos ---- */
+#titulo-principal { /* Selector ID */
+  font-size: 28px; 
+}
+#formulario {  /* Selector ID */
+  background-color: #eef2ff;
+}
+/* -------------------------------- */
+
+/* ---- Diseño responsivo ---- */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    padding: 10px;
+  }
+  img,
+  video {
+    max-width: 100%;
+  }
+}
+/* -------------------------------- */
